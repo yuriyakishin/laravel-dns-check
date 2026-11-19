@@ -1,0 +1,18 @@
+/*
+ * DNS check: the domain facts above the report.
+ * Uses the --wt-* variables of web-tools-core.css.
+ */
+
+.dc-facts-box { margin-top: 32px; padding: 26px 28px; border: 1px solid var(--wt-line); border-radius: 16px; background: var(--wt-surface); }
+.dc-facts-box h3 { margin: 0; font-size: 20px; font-weight: 600; }
+.dc-facts-box + .wt-report { margin-top: 20px; }
+.dc-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px 24px; margin: 16px 0 0; }
+.dc-facts div { min-width: 0; }
+.dc-facts dt { font-size: 13px; color: var(--wt-muted); }
+.dc-facts dd { margin: 2px 0 0; font-weight: 600; color: var(--wt-text); overflow-wrap: anywhere; }
+.dc-facts small { display: block; font-weight: 400; color: var(--wt-text-2); }
+.dc-none { margin: 8px 0 0; color: var(--wt-err); }
+
+@media (max-width: 760px) {
+    .dc-facts-box { padding: 20px; }
+}
