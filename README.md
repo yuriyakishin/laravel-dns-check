@@ -32,10 +32,10 @@ DKIM keys have no fixed name, so the tool tries the selectors used by popular ma
 ## Installation
 
 ```bash
-composer require yu-laravel/dns-check
+composer require yu-laravel/laravel-dns-check
 ```
 
-This also installs [`yu-laravel/web-tools-core`](https://github.com/yuriyakishin/web-tools-core). Both service providers are discovered automatically.
+This also installs [`yu-laravel/laravel-web-tools-core`](https://github.com/yuriyakishin/laravel-web-tools-core). Both service providers are discovered automatically.
 
 ## Usage
 
@@ -48,11 +48,11 @@ Put the component on a page whose layout includes `@livewireStyles` and `@livewi
 Import the styles into your CSS build:
 
 ```css
-@import "../../vendor/yu-laravel/web-tools-core/resources/css/web-tools-core.css";
-@import "../../vendor/yu-laravel/dns-check/resources/css/dns-check.css";
+@import "../../vendor/yu-laravel/laravel-web-tools-core/resources/css/web-tools-core.css";
+@import "../../vendor/yu-laravel/laravel-dns-check/resources/css/dns-check.css";
 ```
 
-To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/web-tools-core#styles)).
+To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/laravel-web-tools-core#styles)).
 
 ## Configuration
 
@@ -65,7 +65,7 @@ A report is cached for 5 minutes, because DNS changes take a few minutes to spre
 
 ## Events
 
-After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "dns-check"` (see [Listening to checks](https://github.com/yuriyakishin/web-tools-core#listening-to-checks)).
+After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "dns-check"` (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
 
 ## Languages
 
