@@ -8,6 +8,8 @@
 
 A Livewire tool for Laravel that checks a domain's DNS and mail records. The visitor enters a domain or URL. The tool reads the records and the registration data (over RDAP), then explains in plain words what works and what to fix.
 
+![DNS Check report](images/dns-check.png)
+
 **🔗 Live example: [yu.net.ua/en/tools/dns-check](https://yu.net.ua/en/tools/dns-check)**
 
 ## What it checks
