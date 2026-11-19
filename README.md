@@ -73,6 +73,14 @@ After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` 
 
 Records are read with PHP's `dns_get_record()` through your server's resolver. A resolver that drops large or TCP answers can return some records empty.
 
+## Author
+
+Yuriy Akishin:
+- 🌐 Website: https://yu.net.ua
+- 📧 Email: yuriy.akishin@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/yuriyakishin/
+- 💻 GitHub: https://github.com/yuriyakishin
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
