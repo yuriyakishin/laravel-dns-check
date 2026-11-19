@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'form' => [
         'label' => '域名或网站地址',

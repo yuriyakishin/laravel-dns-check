@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yu\DnsCheck\Services;
 
 use Yu\DnsCheck\Data\Snapshot;

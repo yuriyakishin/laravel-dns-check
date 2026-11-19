@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'form' => [
         'label' => 'Domein of adres van de website',

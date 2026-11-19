@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'form' => [
         'label' => 'Domaine ou adresse du site',
