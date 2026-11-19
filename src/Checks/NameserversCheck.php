@@ -13,7 +13,8 @@ class NameserversCheck implements DnsRule
     public function run(Snapshot $site): Check
     {
         $evidence = array_map(
-            fn (array $server): string => $server['name'].($server['ips'] === [] ? '' : ' ('.implode(', ', array_slice($server['ips'], 0, 2)).')'),
+            fn (array $server): string => $server['name'].($server['ips'] === [] ? '' : ' ('.implode(', ',
+                array_slice($server['ips'], 0, 2)).')'),
             $site->nameservers,
         );
 
