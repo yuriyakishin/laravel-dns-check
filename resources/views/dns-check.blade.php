@@ -33,7 +33,9 @@
     </div>
 
     @if ($report)
-        <div wire:loading.remove wire:target="analyze" aria-live="polite">
+        {{-- A new block for every check (keyed by the count), so each report scrolls the tool up to its form --}}
+        <div wire:key="wt-report-{{ $reportNumber }}" wire:loading.remove wire:target="analyze" aria-live="polite"
+             x-init="$root.scrollIntoView({ behavior: 'smooth', block: 'start' })">
             @php($domain = $report['domain'])
             <section class="dc-facts-box" aria-labelledby="dc-title">
                 <h3 id="dc-title">{{ $domain['domain'] }}</h3>
